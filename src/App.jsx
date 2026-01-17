@@ -77,7 +77,7 @@ export default function App() {
       k === 'github'
         ? 'https://github.com/shanzcraft'
         : k === 'gamepad'
-        ? 'https://itch.io/shanzgamestudios'
+        ? 'https://shanzgamestudios.itch.io/'
         : k === 'linkedin'
         ? 'https://www.linkedin.com/in/shannon-blitchok'
         : 'mailto:shannon.blitchok@gmail.com'
@@ -108,8 +108,8 @@ export default function App() {
           Quebec. I love programming, writing, worldbuilding, drawing, and
           gaming. Michael Crichton’s <i>Timeline</i> and Dan Brown’s{' '}
           <i>Angels & Demons</i> had just as much of an impact on my creative
-          interests as the open world of <i>GTA San Andreas</i> and the
-          gunfights of <i>Goldeneye</i> on N64.
+          interests as the open world of <i>GTA San Andreas</i> and staying up late
+          playing <i>Call of Duty Black Ops Zombies</i> with my friends.
         </p>
         <br />
         <p>
