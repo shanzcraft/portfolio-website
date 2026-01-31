@@ -31,18 +31,17 @@ html, body {
 }
 .hero h1 { position:relative; z-index:2; }
 
-/* Schematic background overlay */
-.schematic-overlay {
+/* schematic background */
+.background-image {
   position: fixed;
-  inset: -20%;
-  background-image: url("./assets/images/wiiRemote.webp");
+  background-image: url("/images/wiiRemote.webp");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1200px;
-  opacity: 0.18;
+  background-size: cover;
+  opacity: 1;
   transform: rotate(45deg);
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
   filter: blur(0.4px);
 }
 

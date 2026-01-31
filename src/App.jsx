@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import './App.css';
 
-import GithubIcon from './assets/images/github-fill.svg?react';
-import GamepadIcon from './assets/images/game-2-fill.svg?react';
-import LinkedInIcon from './assets/images/linkedin-box-fill.svg?react';
-import EmailIcon from './assets/images/mail-fill.svg?react';
+import GithubIcon from './assets/icons/github-fill.svg?react';
+import GamepadIcon from './assets/icons/game-2-fill.svg?react';
+import LinkedInIcon from './assets/icons/linkedin-box-fill.svg?react';
+import EmailIcon from './assets/icons/mail-fill.svg?react';
 
 const icons = {
   github: GithubIcon,
@@ -15,14 +15,24 @@ const icons = {
 
 const projects = [
   [
+    'CompanionLink Website',
+    'A WordPress website that I worked on for the non-profit organization CompanionLink. I implemented a new layout, managed content, and used plug-ins such as ACF, Gravity Forms, and WPML.',
+    'https://companionlink.org/',
+  ],
+  [
+    'SAGE Website',
+    'A WordPress website that I created for the non-profit organization SAGE. I designed and implemented the layout, managed content, and orchestrated plug-ins. I designed and implemented a system for chapters of SAGE to generate their own dynamic webpage by filling out a form.',
+    'https://sageproject.ca/',
+  ],
+  [
     'Portfolio Website',
-    "This is the website you're on right now! Responsive personal portfolio website built with React that links to my GitHub repositories for other projects.",
+    "This is the website you're on right now! A responsive personal portfolio website built with React that links to some of my public GitHub repositories and other projects.",
     'https://github.com/shanzcraft/portfolio-website',
   ],
   [
     'Jigsaw Puzzle Game',
     'Interactive 2D jigsaw puzzle game implemented with JavaScript, HTML, and CSS. Built to be integrated into a larger Twine project to support narrative storytelling.',
-    'https://github.com/shanzcraft',
+    'https://github.com/shanzcraft/puzzle-game',
   ],
 ];
 
@@ -51,7 +61,6 @@ export default function App() {
 
   return (
     <div className="page">
-      <div className="schematic-overlay" />
       <div className="hero">
         <div className="cube">
           {['front', 'back', 'right', 'left', 'top', 'bottom'].map((f) => (
