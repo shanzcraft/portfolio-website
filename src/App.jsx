@@ -15,6 +15,11 @@ const icons = {
 
 const projects = [
   [
+    '2D Maze Generator',
+    'A 2D maze generator with options for editing the generated maze and then exporting it as an image. Great for planning dungeons or to use in a collage.',
+    'https://shanzcraft.github.io/2D-maze-generator/',
+  ],
+  [
     'CompanionLink Website',
     'A WordPress website that I worked on for the non-profit organization CompanionLink. I implemented a new layout, managed content, and used plug-ins such as ACF, Gravity Forms, and WPML.',
     'https://companionlink.org/',
