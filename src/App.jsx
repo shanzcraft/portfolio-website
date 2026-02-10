@@ -5,6 +5,7 @@ import GithubIcon from './assets/icons/github-fill.svg?react';
 import GamepadIcon from './assets/icons/game-2-fill.svg?react';
 import LinkedInIcon from './assets/icons/linkedin-box-fill.svg?react';
 import EmailIcon from './assets/icons/mail-fill.svg?react';
+import ArrowUpIcon from './assets/icons/arrow-up.svg?react';
 
 const icons = {
   github: GithubIcon,
@@ -12,6 +13,19 @@ const icons = {
   linkedin: LinkedInIcon,
   email: EmailIcon,
 };
+
+function BackToTop() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <button className="back-to-top" onClick={scrollToTop}>
+      <ArrowUpIcon width={26} height={26} />
+      Back To Top
+    </button>
+  );
+}
 
 const projects = [
   [
@@ -157,6 +171,8 @@ export default function App() {
           ))}
         </div>
       </section>
+
+      <BackToTop />
 
       <footer className="footer">© {year} Shannon Blitchok</footer>
 
